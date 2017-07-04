@@ -1,5 +1,14 @@
 # jquery-raty-rails
 
+## WARNING: Effectively abandonware.
+
+I haven't actually used Rails in several years now, and it's unlikely I'll be
+maintaining this package going forward. I'd be happy for someone else to take
+over maintenance. In the meantime, I doubt I'll have the time to update this one
+to newer versions of Rails.
+
+----
+
 ## Introduction
 
 *jquery-raty-rails* is a Ruby gem that wraps the [jQuery Raty][] plugin,
