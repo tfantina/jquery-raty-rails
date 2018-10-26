@@ -136,7 +136,7 @@ task :copy_raty do
   full_js = ASSETS + "javascripts/jquery.raty.js"
   File.open(full_js, "wb") { |f| f.write(js.join('')) }
 
-  min_js = ASSETS + "javascripts/jquery.raty.min.js"
+  min_js = ASSETS + "assets/javascripts/jquery.raty.min.js"
   minify full_js, min_js
 end
 
