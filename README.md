@@ -1,12 +1,9 @@
 # jquery-raty-rails
 
-## WARNING: Effectively abandonware.
-
-I haven't actually used Rails in several years now, and it's unlikely I'll be
-maintaining this package going forward. I'd be happy for someone else to take
-over maintenance. In the meantime, I doubt I'll have the time to update this one
-to newer versions of Rails.
-
+## No longer abandonware
+This project is in the process of being reanimated 💀
+I can't promise that it will work 100% but I am making strides to bring it up to
+date with Rails 5 🛤🎉
 ----
 
 ## Introduction
@@ -23,7 +20,7 @@ allowing its image and Javascript files to be served via the [Rails][]
 
 ### Install the gem
 
-*jquery-raty-rails* requires Rails 3, since it depends on the asset pipeline.
+*jquery-raty-rails* requires Rails 3 or greater, since it depends on the asset pipeline.
 
 To install, add one of the following to your Rails project's `Gemfile`:
 

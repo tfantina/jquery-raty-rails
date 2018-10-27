@@ -195,6 +195,7 @@ def unzip(path)
   end
 end
 
+
 # Minify JS. Currently expects Google Closure to be installed.
 def minify(input_file, output_file)
   #require 'uglifier'

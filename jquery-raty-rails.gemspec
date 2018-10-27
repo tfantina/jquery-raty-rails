@@ -10,19 +10,19 @@ Gem::Specification.new do |s|
   s.authors     = ["Brian M. Clapper"]
   s.email       = ["bmc@clapper.org"]
   s.homepage    = "https://github.com/bmc/jquery-raty-rails"
-  s.summary     = "Integrate jquery-raty into Rails 3"
-  s.description = "Integrates jquery-raty into the Rails 3 asset pipeline."
+  s.summary     = "Integrate jquery-raty into Rails projects"
+  s.description = "Integrates jquery-raty into the Rails 6 asset pipeline."
 
   s.files = Dir["{lib,vendor}/**/*"] + ["LICENSE.md", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails", ">= 5.2.0"
+  s.add_dependency "rails"
+
 
   s.add_development_dependency "sqlite3"
   s.add_development_dependency "minitest"
   s.add_development_dependency "capybara"
   s.add_development_dependency "turn"
-  #s.add_development_dependency "uglifier"
   s.add_development_dependency "gemcutter"
   s.add_development_dependency 'octokit'
   s.add_development_dependency 'pry'

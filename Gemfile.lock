@@ -2,7 +2,7 @@ PATH
   remote: .
   specs:
     jquery-raty-rails (2.0.0)
-      rails (>= 5.2.0)
+      rails
 
 GEM
   remote: http://rubygems.org/
