@@ -1,9 +1,15 @@
 # jquery-raty-rails
 
-## No longer abandonware
-This project is in the process of being reanimated 💀
-I can't promise that it will work 100% but I am making strides to bring it up to
-date with Rails 5 🛤🎉
+This project is in the process of being reanimated after being abandoned 🛤🎉
+As of this moment (Oct 2018) it will successfully pull the [jQuery Raty][]
+code into your project's asset pipeline.  However, the Raty code is hard coded
+into the gem at version 2.8.0.  As time permits I will be creating some tasks
+to pull it directly from the [jQuery Raty][] repository on GitHub.
+
+I am open to contributions and issues, please let me know if you see room for
+improvement.
+
+-Travis Fantina 🐳
 ----
 
 ## Introduction
@@ -20,7 +26,7 @@ allowing its image and Javascript files to be served via the [Rails][]
 
 ### Install the gem
 
-*jquery-raty-rails* requires Rails 3 or greater, since it depends on the asset pipeline.
+*jquery-raty-rails* requires Rails 5 or greater.
 
 To install, add one of the following to your Rails project's `Gemfile`:
 
@@ -54,8 +60,10 @@ At this point, your Rails application has access to jQuery Raty. See the
 
 [jQuery Raty][] is copyright &copy; [Washington Botelho][].
 
-*jquery-raty-rails* copyright &copy; 2012 Brian M. Clapper and is released
+*jquery-raty-rails* copyright &copy; 2018 Brian M. Clapper and is released
 under a [BSD license](/bmc/jquery-raty-rails/blob/master/LICENSE.md).
+
+*jquery-raty-rails* is maintained by [Travis Fantina](https://www.travisfantina.com)
 
 [blog post]: http://rakeroutes.com/blog/write-a-gem-for-the-rails-asset-pipeline/
 [Rails]: http://rubyonrails.org/
