@@ -1,16 +1,29 @@
 # Configure Rails Environment
 ENV["RAILS_ENV"] = "test"
 
-require File.expand_path("../dummy/config/environment.rb",  __FILE__)
-require "rails/test_help"
-require 'minitest/autorun'
-require 'minitest/spec'
-require 'capybara/rails'
+require_relative "../test/dummy/config/environment"
+ActiveRecord::Migrator.migrations_paths = [File.expand_path("../test/dummy/db/migrate", __dir__)]
 
-Rails.backtrace_cleaner.remove_silencers!
+require "minitest/autorun"
+require "capybara/rails"
+
+# Filter out Minitest backtrace while allowing backtrace from other libraries
+# to be shown.
+Minitest.backtrace_filter = Minitest::BacktraceFilter.new
+
+require "rails/test_unit/reporter"
+Rails::TestUnitReporter.executable = 'bin/test'
+
+# Load fixtures from the engine
+if ActiveSupport::TestCase.respond_to?(:fixture_path=)
+  ActiveSupport::TestCase.fixture_path = File.expand_path("fixtures", __dir__)
+  ActionDispatch::IntegrationTest.fixture_path = ActiveSupport::TestCase.fixture_path
+  ActiveSupport::TestCase.file_fixture_path = ActiveSupport::TestCase.fixture_path + "/files"
+  ActiveSupport::TestCase.fixtures :all
+end
+
 
 class IntegrationTest < MiniTest::Spec
   include Capybara::DSL
-
-  register_spec_type(/integration$/, self)
+  register_spec_type(/integration/, self)
 end
