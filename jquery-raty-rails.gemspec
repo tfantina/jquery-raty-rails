@@ -7,11 +7,11 @@ require "jquery-raty-rails/version"
 Gem::Specification.new do |s|
   s.name        = "jquery-raty-rails"
   s.version     = JqueryRatyRails::VERSION
-  s.authors     = ["Brian M. Clapper"]
-  s.email       = ["bmc@clapper.org"]
-  s.homepage    = "https://github.com/bmc/jquery-raty-rails"
+  s.authors     = ["Brian M. Clapper, Travis Fantina"]
+  s.email       = ["tfantina@gmail.com"]
+  s.homepage    = "https://github.com/tfantina/jquery-raty-rails"
   s.summary     = "Integrate jquery-raty into Rails projects"
-  s.description = "Integrates jquery-raty into the Rails 6 asset pipeline."
+  s.description = "Integrates jquery-raty into the Rails 5 asset pipeline."
 
   s.files = Dir["{lib,vendor}/**/*"] + ["LICENSE.md", "Rakefile", "README.md"]
   s.test_files = Dir["test/**/*"]

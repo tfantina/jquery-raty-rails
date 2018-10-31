@@ -25,7 +25,7 @@ allowing its image and Javascript files to be served via the [Rails][]
 To install, add one of the following to your Rails project's `Gemfile`:
 
     gem 'jquery-raty-rails'                                  # Released version
-    gem 'jquery-raty-rails', github: 'bmc/jquery-raty-rails' # Bleeding edge
+    gem 'jquery-raty-rails', github: 'tfantina/jquery-raty-rails' # Bleeding edge
 
 Then, install the gem by running `bundle install`.
 
